@@ -1,0 +1,62 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://i.postimg.cc/wMRjhyCB/rawpixel-561415-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+#welcome-section {
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  padding-top: 200px;
+}
+
+h1 {
+  font-size: 70px;
+}
+
+h2 {
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+}
+
+nav {
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+  font-size: 20px;
+  position: fixed;
+}
+
+li {
+  margin: 15px 20px;
+}
+
+#logo {
+  background-color: pink;
+  border-radius: 50%;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#projects {
+  margin-top: 80px;
+}
+
+.project-title {
+  display: inline-block;
+  height: 220px;
+  width: 280px;
+}
+
+p {
+  font-family: 'Mali', cursive;
+
+}
+
+@media screen and (max-width: 575px) {
+  
+}
