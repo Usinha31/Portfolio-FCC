@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+body {
+  font-family: 'Mali', cursive;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://i.postimg.cc/wMRjhyCB/rawpixel-561415-unsplash.jpg);
   background-size: cover;
@@ -10,53 +14,255 @@ header {
   background-attachment: fixed;
 }
 
-#welcome-section {
-  font-family: 'Permanent Marker', cursive;
-  color: white;
-  padding-top: 200px;
+nav {
+  font-family: 'Mali', cursive;
+  font-weight: bold;
+  font-size: 18px;
+  position: fixed;
+  background-color: DARKGRAY;
 }
 
+.nav-link {
+  color: REBECCAPURPLE;
+}
+
+.nav-link:hover {
+  color: white;
+} 
+
+.navbar li {
+  margin: 15px 20px;
+}
+
+#logo {
+  background-color: violet;
+  border-radius: 50%;
+  font-family: 'Permanent Marker', cursive;
+}
+
+#logo:hover {
+  color: REBECCAPURPLE;
+}
+
+#welcome-section {
+  color: white;
+  margin-top: -350px;
+ }
+
 h1 {
+  font-family: 'Permanent Marker', cursive;
   font-size: 70px;
+  text-shadow: 0 0 5px white;
 }
 
 h2 {
   font-family: 'Mali', cursive;
   font-weight: bold;
+  text-shadow: 0 0 5px white;
 }
 
-nav {
-  font-family: 'Mali', cursive;
+hr {
+  background-color: white;
+}
+
+#about {
+  margin-top: 320px;
   font-weight: bold;
-  font-size: 20px;
-  position: fixed;
-}
-
-li {
-  margin: 15px 20px;
-}
-
-#logo {
-  background-color: pink;
-  border-radius: 50%;
-  font-family: 'Permanent Marker', cursive;
-}
-
-#projects {
-  margin-top: 80px;
-}
-
-.project-title {
-  display: inline-block;
-  height: 220px;
-  width: 280px;
+  background-image:  url(https://i.postimg.cc/8CpYpWK7/Pattern9-dark-BG-min.jpg);
+  color: white;
 }
 
 p {
   font-family: 'Mali', cursive;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
 
+h3 {
+  padding-top: 10px;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.work .work-header {
+  margin-top: 100px;
+  color: REBECCAPURPLE;
+  font-weight: bold;
+}
+
+.project {
+  text-decoration: none;
+  color: darkviolet;
+  display: inline-block;
+  overflow: hidden;
+  border: 2px solid plum;
+  box-shadow: 10px 10px 8px silver; 
+  height: 220px;
+  max-width: 280px;
+  margin: 40px 140px;
+}
+
+.project:hover {
+  text-decoration: none;
+  color: violet;
+}
+
+.project-pic {
+  width: 100%;
+  height: 180px;
+  border-bottom: 2px solid plum;
+}
+
+.project-title {
+  font-weight: bold;
+  padding-top: 4px;
+}
+
+.show-all {
+  text-decoration: none;
+  display: block;
+  max-width: 200px;
+  height: 30px;
+  margin: 0 auto 20px auto;
+  background: violet;
+  color: darkviolet;
+  font-weight: bold;
+  font-size: 1em;
+  border: 1px solid darkviolet;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-top: 1px;
+}
+
+
+.show-all:hover {
+  color: white;
+  text-decoration: none;
+}
+
+h5 {
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+}
+
+h6 {
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: violet;
+  margin-top: 100px;
+}
+
+#icon{
+  padding: 20px;
+  color: white;
+}
+
+#icon:hover {
+  transform: scale(1.4);
+  transition: all .3s;
+  -webkit-transiation: all 0.3s;
+}
+
+footer {
+  font-weight: bold;
+  background-color: DIMGRAY;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: VIOLET;
+}
+
+footer a {
+  color: white;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: VIOLET;
+}
+/* media queries */
+
+@media screen and (max-width: 768px) {
+  #about {
+    margin-top: 180px;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  #about {
+    margin-top: 320px;
+  }
   
+  .navbar li {
+    margin: auto auto;
+  }
+  
+  h1 {
+    font-size: 60px;
+  }
+  
+  h2 {
+    font-size: 30px;
+  }
+  
+  .project {
+    margin: 40px auto;
+  }
+  
+  header {
+    margin-top: 80px;
+  }
 }
+
+@media screen and (max-width: 519px) {
+  #about {
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #about-img {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  h1 {
+    font-size: 50px;
+  }
+  
+  h2 {
+    font-size: 25px;
+  }
+  
+  .navbar li {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 318px) {
+  #about {
+    margin-top: 300px;
+  }
+  
+   h1 {
+    font-size: 35px;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+  
+  .project {
+    margin: 40px auto;
+  }
+}
+
